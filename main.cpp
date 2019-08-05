@@ -7,11 +7,22 @@ int main () {
   	        	cout << "fizzbuzz" << endl;
        		}
         	else if (i % 4 == 0) {
-            		cout << "fizz" << endl;
+            		cout << "fizz";
+			if (i % 5 == 0) {
+				cout << "bool";
+			}
+			cout << endl;
         	}
         	else if (i % 6 == 0) {
-            		cout << "buzz" << endl;
+            		cout << "buzz";
+			if (i % 5 == 0) {
+				cout << "bool";
+			}
+			cout << endl;
         	}
+		else if (i % 5 == 0) {
+			cout << "bool" << endl;
+		}
         	else {
             		cout << i << endl;
 		}
